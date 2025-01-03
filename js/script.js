@@ -761,7 +761,7 @@
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "mail-contact.php",
+                    url: "./mailphp/mail.php",
                     data: $(form).serialize(),
                     success: function () {
                         $("#loader").hide();
@@ -788,34 +788,30 @@
     /*------------------------------------------
             = PARTNERS SLIDER
     -------------------------------------------*/
-    if ($(".partners-slider").length) {
-        $(".partners-slider").owlCarousel({
-            autoplay: true,
-            smartSpeed: 300,
-            margin: 30,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: false,
-            arrows: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-
-                550: {
-                    items: 1
-                },
-
-                992: {
-                    items: 2
-                },
-
-                1300: {
-                    items: 2
-                }
-            }
-        });
-    }
+   if ($(".partners-slider").length) {
+     $(".partners-slider").owlCarousel({
+       autoplay: true,
+       smartSpeed: 300,
+       loop: true,
+       autoplayHoverPause: true,
+       dots: false,
+       arrows: false,
+       responsive: {
+         0: {
+           items: 1,
+         },
+         550: {
+           items: 2,
+         },
+         992: {
+           items: 3,
+         },
+         1300: {
+           items: 4,
+         },
+       },
+     });
+   }
 
     // testimonial
 

@@ -403,7 +403,7 @@ img {
   background: #E59F00;
   color: #fff;
   display: inline-block;
-  padding: 16px 27px;
+  padding: 16px 17px;
   border: 2px solid transparent;
   border-radius: 5px;
   text-transform: capitalize;
@@ -4659,7 +4659,7 @@ img {
 .wpo-partners-section .grid h2 {
   margin: 0;
   text-align: center;
-  font-size: 37px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 52px;
   letter-spacing: 0.08em;
@@ -4667,12 +4667,12 @@ img {
 
 @media (max-width: 767px) {
   .wpo-partners-section .grid h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 .wpo-partners-section .grid h2 i {
-  margin-left: 40px;
+  margin-left: 10px;
   width: 35px;
   height: 35px;
 }
@@ -10515,4 +10515,15 @@ img {
 .department-single .department-single-img img{
   height: 60px;
   width: 60px;
+}
+
+.partners-slider {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin: 0 auto; /* Center the slider itself */
+}
+
+.wpo-site-footer .wpo-contact-widget .contact-ft ul li a{
+    color: #F57661;
 }

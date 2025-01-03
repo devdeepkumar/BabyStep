@@ -132,14 +132,14 @@
             <div class="static-hero-right">
                 <div class="static-hero-img">
                     <div class="static-hero-img-inner">
-                        <img src="images/1.jpg" alt="">
+                        <img src="images/1.webp" alt="">
                         <div class="hero-img-inner-boder"></div>
                     </div>
                     <div class="icon-1">
                         <div class="icon-img">
                             <img src="images/fallopian-tube.png" alt="">
                         </div>
-                        <span>Embryologist</span>
+                        <span>Babysteps</span>
                         <div class="icon-boder"></div>
                     </div>
                 </div>
@@ -176,18 +176,19 @@
                             <div class="grid">
                                 <h2>IVF SOLUTIONS<i class="ti-star"></i></h2>
                             </div>
-                            <div class="grid">
-                                <h2>EXPERIENCED DOCTORS<i class="ti-star"></i></h2>
-                            </div>
-                            <div class="grid">
-                                <h2>PERSONALIZED TREATMENT<i class="ti-star"></i></h2>
-                            </div>
+                            
                             <div class="grid">
                                 <h2>HAPPY PARENTS<i class="ti-star"></i></h2>
                             </div>
                             <div class="grid">
                                 <h2>SUCCESS STORIES<i class="ti-star"></i></h2>
                             </div>
+                            <!-- <div class="grid">
+                                <h2>EXPERIENCED DOCTORS<i class="ti-star"></i></h2>
+                            </div>
+                            <div class="grid">
+                                <h2>PERSONALIZED TREATMENT<i class="ti-star"></i></h2>
+                            </div> -->
                           
                         </div>
                     </div>
@@ -346,24 +347,24 @@
             <div class="service-right">
                 <div class="service-right-wrap">
                     <div class="service-right-img-1">
-                        <img src="images/01_1.jpg" alt="">
+                        <img src="images/01_1.webp" alt="">
                         <div class="service-right-img-boder"></div>
                     </div>
                     <div class="service-img-2">
-                        <img src="images/02_1.jpg" alt="">
+                        <img src="images/02_1.webp" alt="">
                         <div class="service-img-boder"></div>
                     </div>
                 </div>
                 <div class="service-right-wrap-2">
                     <div class="service-img-3">
-                        <img src="images/03_1.jpg" alt="">
+                        <img src="images/03_1.webp" alt="">
                         <div class="service-img-boder"></div>
                     </div>
                     <div class="fun-fact-grids clearfix">
                         <div class="grid">
                             <div class="info">
                                 <h3>
-                                    <span class="odometer" data-count="99">00</span>
+                                    <span class="odometer" data-count="77">00</span>
                                     <i class="fa fa-percent" aria-hidden="true"></i>
                                 </h3>
                                 <p>Positive Rating</p>
@@ -600,44 +601,41 @@
                         </div>
                         <div class="col-xl-6 col-lg-12 col-12">
                             <div class="appoinment-right">
-                                <form method="post" class="contact-validation-active" id="consultancy-form">
+                                <form method="post" action="./mailphp/mail.php" class="contact-validation-active" id="consultancy-form" novalidate="novalidate">
                                     <div class="row">
                                         <div class="form-field col-lg-6">
-                                            <input class="form-control-name " type="text" placeholder="Full Name" name="name" id="name">
+                                            <input class="form-control-name" type="text" placeholder="Full Name" name="name" id="name" required>
                                         </div>
                                         <div class="form-field col-lg-6">
-                                            <input class="form-control-mail" type="email" placeholder="Email" name="email" id="email">
+                                            <input class="form-control-mail" type="email" placeholder="Email" name="email" id="email" required>
                                         </div>
                                         <div class="form-field col-lg-12">
                                             <div class="row">
                                                 <div class="col-lg-6">
-                                                    <input class="form-controls form-control-number " name="phone" type="tel" placeholder="Phone No.">
+                                                    <input class="form-controls form-control-number" name="phone" type="tel" placeholder="Phone No." required>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="row">
                                                         <div class="form-control-age col-lg-6">
-                                                            <select name="age" class="form-control valid">
-                                                                <option value="0" disabled="disabled" selected="">Age
-                                                                </option>
-                                                                <option value="1">22</option>
-                                                                <option value="2">23</option>
-                                                                <option value="3">24</option>
-                                                                <option value="4">25</option>
-                                                                <option value="5">26</option>
-                                                                <option value="6">27</option>
-                                                                <option value="7">28</option>
-                                                                <option value="8">29</option>
-                                                                <option value="9">30</option>
-                                                                <option value="10">31</option>
-                                                                <option value="11">32</option>
-                                                                <option value="12">33</option>
+                                                            <select name="age" class="form-control" required>
+                                                                <option value="0" disabled selected>Age</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30</option>
+                                                                <option value="31">31</option>
+                                                                <option value="32">32</option>
+                                                                <option value="33">33</option>
                                                             </select>
                                                         </div>
-
                                                         <div class="form-controls form-control-gender col-lg-6">
-                                                            <select name="gender" class="form-control valid" aria-required="true" aria-invalid="false">
-                                                                <option value="0" disabled="disabled" selected="">Gender
-                                                                </option>
+                                                            <select name="gender" class="form-control" required>
+                                                                <option value="0" disabled selected>Gender</option>
                                                                 <option value="1">Male</option>
                                                                 <option value="2">Female</option>
                                                             </select>
@@ -647,34 +645,33 @@
                                             </div>
                                         </div>
                                         <div class="form-controls form-control-choose-department">
-                                            <select name="service" class="form-control valid" aria-required="true" aria-invalid="false">
-                                                <option value="0" disabled="disabled" selected="">Choose Service
-                                                </option>
-                                                <option value="1">Fertility Consultation</option>
-                                                <option value="2">Ovulation Induction</option>
-                                                <option value="2">In Vitro Fertilization (IVF)</option>
-                                                <option value="2">Intrauterine Insemination (IUI)</option>
-                                                <option value="2">Egg Freezing and Storage</option>
-                                                <option value="2">Donor Egg and Sperm Programs</option>
-                                                <option value="2">Surrogacy Services</option>
-                                                <option value="2">Genetic Screening</option>
+                                            <select name="service" class="form-control" required>
+                                                <option value="0" disabled selected>Choose Service</option>
+                                                <option value="Fertility Consultation">Fertility Consultation</option>
+                                                <option value="Ovulation Induction">Ovulation Induction</option>
+                                                <option value="In Vitro Fertilization (IVF)">In Vitro Fertilization (IVF)</option>
+                                                <option value="Intrauterine Insemination (IUI)">Intrauterine Insemination (IUI)</option>
+                                                <option value="Egg Freezing and Storage">Egg Freezing and Storage</option>
+                                                <option value="Donor Egg and Sperm Programs">Donor Egg and Sperm Programs</option>
+                                                <option value="Surrogacy Services">Surrogacy Services</option>
+                                                <option value="Genetic Screening">Genetic Screening</option>
                                             </select>
                                         </div>
                                         <div class="col-xl-6 col-lg-12 col-12">
                                             <div class="submit-area">
-                                                <button type="submit" class="theme-btn">Book Appoinment</button>
+                                                <button type="submit" class="theme-btn">Book Appointment</button>
                                                 <div id="loader">
                                                     <i class="ti-reload"></i>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="clearfix error-handling-messages">
-                                            <div id="success">Thank you</div>
-                                            <div id="error"> Error occurred while sending email. Please try again later.
-                                            </div>
+                                            <div id="success">Thank you for your submission! We'll get back to you soon.</div>
+                                            <div id="error">An error occurred while sending the email. Please try again later.</div>
                                         </div>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
@@ -751,8 +748,8 @@
                                     <ul>
                                         <li><i class="fi flaticon-placeholder"></i>Mayapuri, New Delhi
                                         </li>
-                                        <li><i class="fi flaticon-phone-call"></i>+918882459136</li>
-                                        <li><i class="fi flaticon-email"></i>contact@babysteps.com</li>
+                                        <li><a href="tel:+918882459136"><i class="fi flaticon-phone-call"></i>+918882459136</a></li>
+                                        <li><a href="mailto:contact@babysteps.com"><i class="fi flaticon-email"></i>contact@babysteps.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -763,17 +760,18 @@
                                     <h3>Request Call Back</h3>
                                 </div>
                                 
-                                <form>
+                               <form method="post" action="./mailphp/mail2.php" id="call-back-form" novalidate>
                                     <div class="input-1">
-                                        <input type="text" class="form-control" placeholder="Enter Name*" required="">
+                                        <input type="text" class="form-control" placeholder="Enter Name*" name="name" required>
                                     </div>
                                     <div class="input-1">
-                                        <input type="text" class="form-control" placeholder="Enter Phone*" required="">
+                                        <input type="text" class="form-control" placeholder="Enter Phone*" name="phone" required>
                                     </div>
                                     <div class="submit clearfix">
                                         <button type="submit">Request Call Back</button>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
